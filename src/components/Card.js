@@ -35,7 +35,7 @@ export default function CardPoke(props){
     const {pokemon, img} = props
     const { id, nome} = pokemon
     return(
-        <Grid item xs={12} sm={2} key={id}>
+        <Grid item xs={6} sm={2} key={id}>
             <Link className={classes.link} to={"/pokemon/" + id}>
                 <Card className={classes.card}>
                 <CardMedia className={classes.cardMedia} image={img}> </CardMedia>

@@ -17,7 +17,7 @@ export default function Pokedex(){
     const [pokemonData, setPokemonData] = useState(null)
     
     useEffect(()=>{
-        axios.get(POKEMON_API_URL + "?limit=800").then((response)=>{
+        axios.get(POKEMON_API_URL + "?limit=402").then((response)=>{
            if(response.status >= 200 && response.status < 300){
                const {results} = response.data
                let PokemonsList = []
@@ -26,7 +26,7 @@ export default function Pokedex(){
                    index++
                     let pokemon = {
                         id: index,
-                        img: IMG_API_URL + index + ".png",
+                        img: IMG_API_URL + "/pokemon_icon_"+ ("000" + index).slice(-3) +"_00.png",
                         nome: pokemonData.name
                     }
                     PokemonsList.push(pokemon)

@@ -77,8 +77,8 @@ export default function Detalhes(){
                    <Box className={classes.pokeContainer}>
                         <Typography className={classes.titulo} variant="h4">
                                 {pokemon?.nome}
-                        </Typography>
-                        <img className={classes.img} src={IMG_API_URL + "/" + pokemon?.id + ".png"}/>
+                        </Typography> 
+                        <img className={classes.img} src={IMG_API_URL + "/pokemon_icon_"+ ("000" + pokemon?.id).slice(-3) +"_00.png" }/>
                         <Box className={classes.pokemonInfo}>
                             <hr className={classes.hr}></hr>
                             <Grid container className={classes.containerPoke}>
