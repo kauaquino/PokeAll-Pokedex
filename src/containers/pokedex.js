@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme)=> ({
     pokeContainer:{
         textAlign: "center",
         padding: "80px 10px 0px 10px",
-        backgroundColor: "rgb(68,68,68)"
+        backgroundColor: "#D6D1F5"
     }
 }))
 

@@ -5,7 +5,11 @@ import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles((theme) =>({
     AppBar:{
-        backgroundColor: 'black'
+        backgroundColor: '#7f58af',
+       
+    },
+    justify:{
+        justifyContent: 'center'
     },
     link: {
         textDecoration: 'none',
@@ -18,9 +22,9 @@ export default function Navegacao(){
     
     return(
         <AppBar className={classes.AppBar} position="fixed">
-            <Toolbar>
+            <Toolbar className={classes.justify}>
                 <Link to="/" className={classes.link}>
-                    <Typography>Pokedex</Typography>
+                    <Typography>PokeAll - Pokedex</Typography>
                 </Link>
             </Toolbar>
         </AppBar>
